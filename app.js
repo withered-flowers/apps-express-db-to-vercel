@@ -29,4 +29,6 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`Application is working at port ${port}`));
+// app.listen(port, () => console.log(`Application is working at port ${port}`));
+
+module.exports = app;
