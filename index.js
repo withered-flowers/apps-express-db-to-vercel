@@ -25,6 +25,7 @@ app.get("/", async (req, res) => {
       },
     });
   } catch (err) {
+    console.log(err);
     res.json({ code: 400, message: err });
   }
 });
