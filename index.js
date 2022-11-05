@@ -30,6 +30,15 @@ app.get("/", async (req, res) => {
   }
 });
 
+app.get("/echo", (req, res) => {
+  res.status(200).json({
+    statusCode: 200,
+    message: {
+      echo: "This is just an echo",
+    },
+  });
+});
+
 // app.listen(port, () => console.log(`Application is working at port ${port}`));
 
 module.exports = app;
